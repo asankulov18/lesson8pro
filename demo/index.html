@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dani_Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="index.html">
+                    <div class="logotype">
+                        <h2>Dani Store</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="pages/home_works.html">О нас</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/lessons.html">Продукты</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/catalog.html">Каталог</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Связаться</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="container">
+            <div class="inner_main">
+                <h1><strong id="js-color">Dani Store</strong> - всё для вашего цифрового мира!</h1>
+                <div class="colors-buttons">
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;prev</button>
+                    <div class="slide active_slide">
+                        <div class="slide_card">
+                            <h3>apple watch</h3>
+                            <p>“Apple Watch помогает вам оставаться на связи и заботиться о здоровье. Умные функции и стильный дизайн — идеальное сочетание для повседневной жизни.”</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Iphone</h3>
+                            <p>“iPhone — это сочетание элегантного дизайна, мощных технологий и удобства в использовании. Откройте для себя передовые функции, такие как камера профессионального уровня и невероятная производительность в каждой модели.”</p>
+                            <a href="https://learn.javascript.ru/recursion" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Macbook</h3>
+                            <p>“MacBook — ваш надежный помощник для работы и творчества. Легкий, мощный и с длительным временем работы от аккумулятора, он идеально подходит для любых задач.”</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>airpods</h3>
+                            <p>“AirPods — это свобода звука без проводов. Чистый звук, активное шумоподавление и удобство использования делают их идеальным выбором для всех любителей музыки.”</p>
+                            <a href="https://highload.today/kak-ustroen-event-loop-v-javascript-parallelnaya-model-i-tsikl-sobytij/" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="botlle">
+        <div class="container">
+            <div class="bottle_inner">
+                <a href="pages/monster.html">
+                    <div class="bowl">
+                        <div class="shadow"></div>
+                        <div class="liquid"></div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_video">
+        <div class="container">
+            <h3>Application</h3>
+            <div class="inner_block_video">
+                <iframe width="80%" height="450" src="https://www.youtube.com/embed/zDlg64fsQow" title="YouTube video player" frameborder="2" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <a href="https://www.instagram.com/asankulov18/" target="_blank">
+                <div class="inner_footer">
+                    <h2>Made by Daniel</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <input
+                    required
+                    placeholder="Ваше имя"
+                    name="name"
+                    type="text"
+                    class="modal_input"
+                >
+                <input
+                    required
+                    placeholder="Ваш номер телефона"
+                    name="phone"
+                    type="text"
+                    class="modal_input"
+                >
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>
+

@@ -1,0 +1,51 @@
+
+.characters {
+    background: var(--black);
+    height: 1080px;
+}
+
+.characters-list {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.character-card {
+    margin-top: 50px;
+    border: 2px solid var(--orange);
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.character-card p, .character-card span {
+  color: var(--orange);
+}
+
+.character-photo {
+    width: 100%;
+    height: 150px;
+    border: 2px solid var(--orange);
+    margin: 0 auto;
+    border-radius: 18px;
+}
+
+.character-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.span-color{
+    color: white;
+}
+.iphone{
+    text-align: center;
+    color: white;
+}

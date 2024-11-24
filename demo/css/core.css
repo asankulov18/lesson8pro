@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Britannic Bold", sans-serif;
+    background: linear-gradient(135deg, var(--white), var(--purple));
+    color: var(--black);
+    line-height: 1.6;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, var(--purple), var(--light-grey));
+    color: var(--black);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: white;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    background: #56585D;
+    border: 2px solid var(--light-grey);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    color: white;
+    text-transform: uppercase;
+    animation: textAppear 1.5s ease-out;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+strong {
+    color: white;
+}
+
+label {
+    font-size: 24px;
+    color: var(--light-grey);
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 5px;
+    color: var(--light-grey);
+    background: black;
+    border: 2px solid var(--light-grey);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+input:focus {
+    background: #f5f5f5;
+    box-shadow: 0 0 8px white; /* Подсветка при фокусе */
+}
+
+.checker {
+    color: white;
+    font-size: 30px;
+}
+
+.btn-slide {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--light-grey);
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    font-weight: 800;
+    z-index: 1;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-slide:hover {
+    background: white !important;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1);
+}
+
+:root {
+    /* --orange: rgb(108, 167, 218); */
+    --orange: #3684ab;
+    --black: rgb(0, 0, 0);
+    --white: #ffffff;
+    --purple: #3684ab;
+    --light-grey: #a3a0a0; /* Добавлен светло-серый цвет */
+}
+
+/* Анимация для текста */
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+        height: 45px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+    }
+
+    .btn-slide {
+        width: 80px;
+        height: 80px;
+    }
+}
